@@ -1,0 +1,47 @@
+body
+{
+	background-image:url("../Imagens/background.jpg");
+	font-family:verdana;
+	font-weight:bold;
+}
+
+#formLogin
+{
+	border-style:solid;
+	border-color:#194c83;
+	background-color:white;
+	margin-top:5%;
+	margin-left:38%;
+	width:25%;
+}
+
+#botao
+{
+	background-color:#194c83;
+	font-family:verdana;
+	font-size:1.3em;
+	color:#FFFFFF;
+	margin-left:50%;
+	width:27%;
+}
+p
+{
+	color:#194c83;
+	margin-left:15%;
+	margin-bottom:0.5%;
+	font-size:1em;
+}
+.caixa
+{
+	font-family:verdana;
+	margin-top:-20px;
+	margin-left:15%;
+}
+
+h1
+{
+	color:#FFFFFF;
+	margin-left:40%;
+	margin-bottom:0%;
+	margin-top:10%;
+}
