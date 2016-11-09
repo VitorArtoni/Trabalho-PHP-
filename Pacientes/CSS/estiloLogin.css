@@ -24,6 +24,29 @@ body
 	margin-left:50%;
 	width:27%;
 }
+
+#botao_menu
+{
+	background-color:#194c83;
+	font-family:verdana;
+	font-size:1.3em;
+	color:#FFFFFF;
+	margin-left:50%;
+	width:120%;
+	
+	transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+}
+
+#menu
+{
+	position: absolute;
+	top: 30%;
+	left: 23%
+}
+
 p
 {
 	color:#194c83;
