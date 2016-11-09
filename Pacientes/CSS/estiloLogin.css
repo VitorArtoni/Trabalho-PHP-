@@ -29,22 +29,41 @@ body
 {
 	background-color:#194c83;
 	font-family:verdana;
-	font-size:1.3em;
+	font-size:1em;
 	color:#FFFFFF;
-	margin-left:50%;
-	width:120%;
+	width:20%;
+	float: left;
+	text-align: center;
+	margin: 10px;
 	
-	transition-property: width;
-    transition-duration: 2s;
-    transition-timing-function: linear;
-    transition-delay: 1s;
+}
+
+#container
+{
+	width: 1400px;
+	right:1000px;
 }
 
 #menu
 {
-	position: absolute;
-	top: 30%;
-	left: 23%
+	position:absolute;
+	left: 20%;
+	width: 90%;
+}
+
+#conteudo
+{
+	width: 60%;
+	right: 100%;
+}
+
+#Iframe
+{
+	width: 70%;
+	right: 100%;
+	position:absolute;
+	left: 14%;
+	top: 17%;
 }
 
 p
