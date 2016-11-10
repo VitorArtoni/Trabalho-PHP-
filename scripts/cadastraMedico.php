@@ -2,10 +2,10 @@
 
 require 'conexao.php';
 
-$cpf = 123;
-$nome = "Carol";
-$login = "carol";
-$senha = "repolho12";
+$cpf = $_POST["cpf_medico"];
+$nome = $_POST["nome_medico"];
+$login = $_POST["usuario_medico"];
+$senha = $_POST["senha_medico"];
 
 
 $query = "Insert into usuario (cpf, nome, login, senha) values ('$cpf', '$nome', '$login', '$senha')";
