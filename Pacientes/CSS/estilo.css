@@ -97,3 +97,39 @@ h1
 	margin-bottom:0%;
 	margin-top:10%;
 }
+
+#dados
+{
+	background-color:white;
+	width:50%;
+	height:80%;
+	margin-top:5%;
+	margin-left:25%;
+}
+
+#cabecalho
+{
+	color:#194c83;
+	font-size:1em;
+}
+
+#tabelaPacientes
+{
+	width:100%;
+}
+.linha
+{
+	text-align:center;
+}
+
+.nome
+{
+	font-size:0.85em;
+	text-align:center;
+}
+
+.cpf
+{
+	font-size:0.85em;
+	text-align:center;
+}
