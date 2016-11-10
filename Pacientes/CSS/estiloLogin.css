@@ -5,16 +5,9 @@ body
 	font-weight:bold;
 }
 
-/*#container
-{
-	background-image:url("../Imagens/background.jpg");
-	height: 600px;
-	width: 600px;
-}*/
-
 #body_formPaciente
 {
-		background-image:url("../Imagens/background_.jpg");
+	background-image:url("../Imagens/background_.jpg");
 }
 
 #formLogin
@@ -27,7 +20,7 @@ body
 	width:25%;
 }
 
-#formPaciente
+.formulario
 {
 	font-family: verdana;
 	width: 80%;
