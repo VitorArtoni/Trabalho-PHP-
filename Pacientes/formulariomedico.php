@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8"> 
 		<link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
-		<title> Formulário Médico</title>
-		
+		<title> Formulário Médico</title>		
 	</head>
 	
 	<body id="body_formPaciente">
 	
 		<div class="formulario">
 			<p> Formulário de Médicos </p> <br>
-			<form action="scripts/cadastraMedico.php" method="post">
+			<form>
 				<p> Nome  </p>
 				<input type="text" class="caixa" name="nome_medico" size="28%"/>
 				<p> CPF </P>
@@ -22,7 +22,5 @@
 				<p> <input type="submit" id="botao_menu" value="Cadastrar" name="logar"/> </p>
 			</form>
 		</div>
-		
 	</body>
-	
 </html>
