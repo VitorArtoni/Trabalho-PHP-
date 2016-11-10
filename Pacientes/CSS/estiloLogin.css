@@ -15,6 +15,13 @@ body
 	width:25%;
 }
 
+#formPaciente
+{
+	font-family: verdana;
+	height: 100%;
+	width: 100%;
+}
+
 #botao
 {
 	background-color:#194c83;
@@ -33,22 +40,19 @@ body
 	color:#FFFFFF;
 	width:20%;
 	float: left;
-	text-align: center;
 	margin: 10px;
-	
 }
 
 #container
 {
 	width: 1400px;
-	right:1000px;
 }
 
 #menu
 {
 	position:absolute;
 	left: 20%;
-	width: 90%;
+	width: 80%;
 }
 
 #conteudo
@@ -60,7 +64,7 @@ body
 #Iframe
 {
 	width: 70%;
-	height: 100%;
+	height: 80%;
 	position:absolute;
 	left: 14%;
 	top: 17%;
