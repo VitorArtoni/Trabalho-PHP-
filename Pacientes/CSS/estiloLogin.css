@@ -5,6 +5,18 @@ body
 	font-weight:bold;
 }
 
+/*#container
+{
+	background-image:url("../Imagens/background.jpg");
+	height: 600px;
+	width: 600px;
+}*/
+
+#body_formPaciente
+{
+		background-image:url("../Imagens/background_.jpg");
+}
+
 #formLogin
 {
 	border-style:solid;
@@ -18,8 +30,9 @@ body
 #formPaciente
 {
 	font-family: verdana;
-	height: 100%;
-	width: 100%;
+	width: 80%;
+	position:absolute;
+	left: 20%;
 }
 
 #botao
