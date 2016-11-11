@@ -10,7 +10,7 @@
 	
 		<div class="formulario">
 			<p> Formulário de Médicos </p> <br>
-			<form>
+			<form action="../scripts/cadastraMedico.php" method="post">
 				<p> Nome  </p>
 				<input type="text" class="caixa" name="nome_medico" size="28%"/>
 				<p> CPF </P>
