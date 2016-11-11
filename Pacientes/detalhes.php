@@ -12,6 +12,9 @@
 		$cpf = $_POST["cpf"];
 		echo $cpf;
 
+		$query = "SELECT cpf, nome, datanascimento, telefone, email, tiposangue, planosaude, alergias, prontuario FROM paciente WHERE cpf = $cpf";
+    	$resultado = mysqli_query($conexao,$query);
+
 		/*
 		<div id="dadosPaciente">
 			<table id="tabelaPacientes">
