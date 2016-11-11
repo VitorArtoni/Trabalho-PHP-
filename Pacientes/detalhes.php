@@ -5,8 +5,14 @@
 		<title> Pacientes</title>
 	</head>
 	
-	<body>
-	
+	<body>	
+	<?php
+
+		require '../scripts/conexao.php';
+		$cpf = $_POST["cpf"];
+		echo $cpf;
+
+		/*
 		<div id="dadosPaciente">
 			<table id="tabelaPacientes">
 				<tr id="cabecalho" class="linha">
@@ -14,8 +20,8 @@
 					<td>CPF</td>
 					<td>Telefone</td>
 					<td>E-mail</td>
-					<td>Tipo SanguÌneo</td>
-					<td>Plano de Sa˙de</td>
+					<td>Tipo Sangu√≠neo</td>
+					<td>Plano de Sa√∫de</td>
 				</tr>
 				<tr>
 					<td class="dado">Vitor Artoni de Marcio</td>
@@ -28,14 +34,15 @@
 			</table>
 			
 			<div id="alergia">
-			Alergias ser„o inseridas aqui
+			Alergias ser√£o inseridas aqui
 			</div>
 			
 			<div id="prontuario">
-			Prontu·rio ser· inserido aqui
+			Prontu√°rio ser√£o inserido aqui
 			</div>
 		<div>
 		</div>
-	</body>
-	
+		*/
+		?>
+	</body>	
 </html>

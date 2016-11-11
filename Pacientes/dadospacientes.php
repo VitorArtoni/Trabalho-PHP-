@@ -21,8 +21,8 @@
         echo "<table id='tabelaPacientes'><tr id='cabecalho' class='linha'><td>CPF</td><td>Nome</td></tr>";
         while($row = mysqli_fetch_assoc($resultado))
         {
-            echo "<tr><td class='dado'>".$row["cpf"]."</td><td class='dado'>".$row["nome"]."</td><td><form action='detalhes.php'>
-    <input type='submit' id=".$row["cpf"]." value='Ver detalhes' /></form></td></tr>";
+            echo "<tr><td class='dado'>".$row["cpf"]."</td><td class='dado'>".$row["nome"]."</td><td><form action='detalhes.php' method='post'>
+            <input type='submit' name='cpf' value=".$row["cpf"]." /></form></td></tr>";
         }
         echo "</table>";
     }
