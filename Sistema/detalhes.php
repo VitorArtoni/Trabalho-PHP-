@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php 
+	session_start();
+
+	//unset($_SESSION['usuario']);
+	
+	
+	if ($_SESSION['usuario'] == 0){
+		header("location:login.php");
+	}
+?>
 <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
@@ -7,14 +17,24 @@
 	
 	<body>	
 
+	
 	<div id="dadosPaciente">			
 
 	<?php
 
 		require '../scripts/conexao.php';
 		$cpf = $_POST["cpf"];
-		// Se for Enfermeiro Chefe salvarPmaster.php Se for medico salvarPnormal.php
+		if ($_SESSION['usuario']==1){
+			
+			// Se for Enfermeiro Chefe salvarPmaster.php Se for medico salvarPnormal.php
 		$urlSalvar = "../scripts/salvarPmaster.php";
+		}
+		else
+			if ($_SESSION['usuario']==2)
+		{
+		
+			$urlSalvar = "../scripts/salvarPnormal.php";
+		}
 
 		$query = "SELECT cpf, nome, datanascimento, telefone, email, tiposangue, planosaude, alergias, prontuario FROM paciente WHERE cpf = $cpf";
     	$resultado = mysqli_query($conexao,$query);

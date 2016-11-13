@@ -1,5 +1,7 @@
 <?php
 
+
+	
 require 'conexao.php';
 
 $cpf = isset($_POST['cpf']) ? $_POST['cpf'] : '';
@@ -18,7 +20,7 @@ $resultado = mysqli_query($conexao,$query);
 
 
 mysqli_close($conexao);
-header("Location: ../Sistema/menuprincipal.php"); /* Redirect browser */
+header("Location: ../Sistema/menuprincipalMaster.php"); /* Redirect browser */
 exit();
 
 ?>

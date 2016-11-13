@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php 
+	session_start();
+
+	//unset($_SESSION['usuario']);
+
+	
+	if (($_SESSION['usuario'] == 0) || ( $_SESSION['usuario'] == 2)){
+		header("location:login.php");
+	}
+?>
 <html>
 	<head>
 		<meta charset="UTF-8"> 
@@ -8,7 +18,7 @@
 	
 	<body>
 			<div id="container">
-			
+			<a href="login.php" class="button" style="top: 236px;left:199px;">Sair</a>
 				<div id="menu">
 					<h3> <a href="formulariopaciente.php" target="iframe_a"> <input type="button" id="botao_menu" value="Cadastrar Paciente"/> </a> </h3>
 					<h3> <a href="formulariomedico.php" target="iframe_a"> <input type="button" id="botao_menu" value="Cadastrar Medico"/> </a> </h3>

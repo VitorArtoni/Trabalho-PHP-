@@ -1,4 +1,14 @@
 <!DOCTYPE html>
+<?php 
+	session_start();
+
+	//unset($_SESSION['usuario']);
+
+	
+	if ($_SESSION['usuario'] == 0){
+		header("location:login.php");
+	}
+?>
 <html>
 	<head>
 		<meta charset="UTF-8"> 
