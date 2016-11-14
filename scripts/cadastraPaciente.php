@@ -12,10 +12,18 @@ $planosaude = $_POST["planosaude_paciente"];
 $alergias = $_POST["alergias_paciente"];
 $prontuario = $_POST["prontuario_paciente"];
 
-$query = "Insert into paciente (cpf, nome, datanascimento, telefone, email, tiposangue, planosaude, alergias, prontuario) values ('$cpf', '$nome', '$datanascimento', '$telefone', '$email', '$tiposangue', '$planosaude', '$alergias', '$prontuario')";
-$resultado = mysqli_query($conexao,$query);
 
 
-mysqli_close($conexao);
+    $query = "Insert into paciente (cpf, nome, datanascimento, telefone, email, tiposangue, planosaude, alergias, prontuario) values ('$cpf', '$nome', '$datanascimento', '$telefone', '$email', '$tiposangue', '$planosaude', '$alergias', '$prontuario')";
+    $resultado = mysqli_query($conexao,$query);
+    if($resultado)
+    {
+        echo "<br /> Cadastrado com sucesso!<br />";
+    }
+    else
+    {
+        echo "<br /> Erro ao Cadastrar! <br />";
+    }
+    mysqli_close($conexao);
 
 ?>
