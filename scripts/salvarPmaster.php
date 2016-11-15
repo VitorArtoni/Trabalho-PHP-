@@ -15,12 +15,14 @@ $alergias = isset($_POST['alergias']) ? $_POST['alergias']: '';
 $prontuario = isset($_POST['prontuario']) ? $_POST['prontuario']: '';
 
 
-$query = "UPDATE paciente SET  nome = '$nome', datanascimento = '$datanascimento', telefone = '$telefone', email = '$email', tiposangue = '$tiposangue', planosaude = '$planosaude', alergias = '$alergias', prontuario = '$prontuario' WHERE cpf = '$cpf'";
-$resultado = mysqli_query($conexao,$query);
+
+
+$atualiza = mysqli_query($conexao,"UPDATE paciente SET  nome = '$nome', datanascimento = '$datanascimento', telefone = '$telefone', email = '$email', tiposangue = '$tiposangue', planosaude = '$planosaude', alergias = '$alergias', prontuario = '$prontuario' WHERE cpf = '$cpf'");
+
 
 
 mysqli_close($conexao);
-header("Location: ../Sistema/menuprincipalMaster.php"); /* Redirect browser */
+//header("Location: ../Sistema/menuprincipalMaster.php"); /* Redirect browser */
 exit();
 
 ?>
