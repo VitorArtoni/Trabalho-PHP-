@@ -10,6 +10,12 @@ body
 	background-image:url("../Imagens/background_.jpg");
 }
 
+.FormUser
+{
+	float: left;
+	margin: 10px;
+}
+
 #formLogin
 {
 	border-style:solid;
@@ -32,9 +38,9 @@ body
 {
 	background-color:#194c83;
 	font-family:verdana;
-	font-size:1.3em;
+	font-size:0.8em;
 	color:#FFFFFF;
-	margin-left:50%;
+	margin-left:60%;
 	width:27%;
 }
 
@@ -49,16 +55,29 @@ body
 	margin: 10px;
 }
 
+#botao_menu_iframe
+{
+	background-color:#194c83;
+	font-family:verdana;
+	font-size:1em;
+	color:#FFFFFF;
+	width:20%;
+	float: left;
+	position:absolute;
+	left:41.3%;
+	top:89%;
+}
+
 #container
 {
-	width: 1400px;
+	width: 1000px;
 }
 
 #menu
 {
+	width: 77%;
 	position:absolute;
-	left: 20%;
-	width: 80%;
+	left: 23%;
 }
 
 #conteudo

@@ -15,7 +15,7 @@
 		<title> Pacientes</title>
 	</head>
 	
-	<body>	
+	<body id="body_formPaciente">	
 
 	
 	<div id="dadosPaciente">			

@@ -21,7 +21,7 @@
 				<input type="text" class="caixa" name="usuario" size="28%"/> 
 				<p>Senha  </p>
 				<input type="password" class="caixa" name="senha" size="28%"/>
-				<p> <input type="submit" id="botao" value="Entrar" name="logar"/> </p>
+				<p> <input type="submit" class="button" id="botao" value="Entrar" name="logar"/> </p>
 			</form>
 		</div>
 		

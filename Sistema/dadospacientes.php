@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
     <title>Dados do Paciente</title>
 </head>
-<body>
+<body id="body_formPaciente">
 
     <div id="dados">
 <?php

@@ -29,7 +29,7 @@
 				<input type="text" class="caixa" name="usuario_medico" size="28%"/>
 				<p> Senha </p>
 				<input type="paswword" class="caixa" name="senha_medico" size="28%"/>
-				<p> <input type="submit" id="botao_menu" value="Cadastrar" name="logar"/> </p>
+				<p> <input type="submit" class="button" id="botao_menu" value="Cadastrar" name="logar"/> </p>
 			</form>
 		</div>
 	</body>
