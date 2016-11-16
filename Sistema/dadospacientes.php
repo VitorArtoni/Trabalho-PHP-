@@ -32,7 +32,7 @@
         while($row = mysqli_fetch_assoc($resultado))
         {
             echo "<tr><td class='dado'>".$row["cpf"]."</td><td class='dado'>".$row["nome"]."</td><td><form action='detalhes.php' method='post'>
-            <input type = 'hidden' name='cpf' value =".$row["cpf"]."/><input type='submit' value ='Ver mais'/></form></td></tr>";
+            <input type = 'hidden' name='cpf' value ='".$row["cpf"]."'></input><input type='submit' value ='Ver mais'/></form></td></tr>";
         }
         echo "</table>";
     }

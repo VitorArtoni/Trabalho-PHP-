@@ -18,12 +18,13 @@
 	<body id="body_formPaciente">	
 
 	
-	<div id="dadosPaciente">			
+	<div id="dadosPaciente">		
 
 	<?php
 
 		require '../scripts/conexao.php';
 		$cpf = $_POST["cpf"];
+		
 
 		$query = "SELECT cpf, nome, datanascimento, telefone, email, tiposangue, planosaude, alergias, prontuario FROM paciente WHERE cpf = $cpf";
     	$resultado = mysqli_query($conexao,$query);
