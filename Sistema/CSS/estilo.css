@@ -22,7 +22,7 @@ body
 	border-color:#194c83;
 	background-color:white;
 	margin-top:5%;
-	margin-left:38%;
+	margin-left:35%;
 	width:25%;
 }
 
@@ -52,7 +52,7 @@ body
 	color:#FFFFFF;
 	width:20%;
 	float: left;
-	margin: 10px;
+	margin-left:35px;
 }
 
 #botao_menu_iframe
@@ -64,7 +64,7 @@ body
 	width:20%;
 	float: left;
 	position:absolute;
-	left:41.3%;
+	left:46%;
 	top:89%;
 }
 
@@ -119,28 +119,29 @@ h1
 
 #dados
 {
-	background-color:white;
 	width:50%;
 	height:80%;
 	margin-top:5%;
 	margin-left:25%;
+	font-size:1.5em;
 }
 
 #cabecalho
 {
-	color:#194c83;
-	font-size:1em;
+	color:#65a9d7;
+	text-shadow: 1px 1px #000000;
+	font-size:1.1em;
+	font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
 }
+
 #dadosPaciente
 {
-	width:80%;
-	height:80%;
-	margin-top:5%;
-	margin-left:10%;
+	width:100%;
+	height:100%;
 }
+
 #tabelaPacientes
 {
-	background-color:white;
 	width:100%;
 }
 .linha
@@ -157,24 +158,45 @@ h1
 #alergia
 {
 	background-color:white;
-	margin-top:5%;
-	height:40%;
+	margin-top:3%;
+	height:50%;
 	width:100%;
 	border-style:solid;
 	border-color:rgb(94,94,94);
+	vertical-align:text-top;
+	color:#65a9d7;
+	text-shadow: 1px 1px #000000;
 }
 
 #prontuario
 {
 	background-color:white;
-	margin-top:5%;
+	margin-top:3%;
 	height:40%;
 	width:100%;
 	border-style:solid;
 	border-color:rgb(94,94,94);
+	vertical-align:text-top;
+	color:#65a9d7;
+	text-shadow: 1px 1px #000000;
 }
 
-.button {
+#txtAlergia
+{
+	width:99.4%;
+	height:65px;
+	vertical-align:text-top;
+}
+
+#txtProntuario
+{
+	width:99.4%;
+	height:110px;
+	vertical-align:text-top;
+}
+
+.button 
+{
    border-top: 1px solid #7fc2eb;
    background: #65a9d7;
    background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
@@ -195,13 +217,20 @@ h1
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
-   }
-.button:hover {
+}
+.button:hover 
+{
    border-top-color: #1a77b5;
    background: #1a77b5;
    color: #ccc;
-   }
-.button:active {
+}
+.button:active 
+{
    border-top-color: #1b435e;
    background: #1b435e;
-   }
+}
+
+#sair
+{
+	margin-left:1300px;
+}

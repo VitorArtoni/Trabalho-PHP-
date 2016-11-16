@@ -13,9 +13,9 @@
 	</head>
 	
 	<body>
-		<h1> Nome do Hospital </h1>
+		<h1> HospitalFT </h1>
 		
-		<div >
+		<div>
 			<form id="formLogin" action="validar.php" method="POST">
 				<p>Usuário</p>
 				<input type="text" class="caixa" name="usuario" size="28%"/> 

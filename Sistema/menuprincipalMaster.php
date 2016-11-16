@@ -18,7 +18,8 @@
 	
 	<body>
 			<div id="container">
-				<a href="login.php" class="button">Sair</a>
+	
+	<a href="login.php" class="button" id="sair">Sair</a>
 				<div id="menu">
 					<h3> <a href="formulariopaciente.php" target="iframe_a"> <input type="button" class="button" id="botao_menu" value="Cadastrar Paciente"/> </a> </h3>
 					<h3> <a href="formulariomedico.php" target="iframe_a"> <input type="button"class="button" id="botao_menu" value="Cadastrar Medico"/> </a> </h3>
