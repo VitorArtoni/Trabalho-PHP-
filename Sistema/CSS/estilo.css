@@ -7,7 +7,8 @@ body
 
 #body_formPaciente
 {
-	background-image:url("../Imagens/background_.jpg");
+	background: rgb(0, 0, 0) transparent;
+	background: rgba(0, 0, 0, 0.2);
 }
 
 .FormUser
@@ -64,7 +65,7 @@ body
 	width:20%;
 	float: left;
 	position:absolute;
-	left:46%;
+	left:39%;
 	top:89%;
 }
 
@@ -88,10 +89,10 @@ body
 
 #Iframe
 {
-	width: 70%;
+	width: 80%;
 	height: 80%;
 	position:absolute;
-	left: 14%;
+	left: 10%;
 	top: 17%;
 }
 
@@ -109,6 +110,13 @@ p
 	margin-left:15%;
 }
 
+.caixaComErro
+{
+	font-family:verdana;
+	margin-top:-20px;
+	margin-left:15%;
+	border-color:red;
+}
 h1
 {
 	color:#FFFFFF;
@@ -130,7 +138,7 @@ h1
 {
 	color:#65a9d7;
 	text-shadow: 1px 1px #000000;
-	font-size:1.1em;
+	font-size:1em;
 	font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
 }
 

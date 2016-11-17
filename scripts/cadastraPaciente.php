@@ -8,7 +8,7 @@ $nome = $_POST["nome_paciente"];
 $datanascimento = $_POST["datanascimento_paciente"];
 $telefone = $_POST["telefone_paciente"];
 $email = $_POST["email_paciente"];
-$tiposangue = $_POST["tiposangue_paciente"];
+$tiposangue = strtoupper($_POST["tiposangue_paciente"]);
 $planosaude = $_POST["planosaude_paciente"];
 $alergias = $_POST["alergias_paciente"];
 $prontuario = $_POST["prontuario_paciente"];
@@ -20,7 +20,6 @@ $num_linha=mysqli_num_rows($achar_pessoa);
 if ($num_linha > 0){
 	
 	$atualiza = mysqli_query($conexao,"UPDATE paciente SET  nome = '$nome', datanascimento = '$datanascimento', telefone = '$telefone', email = '$email', tiposangue = '$tiposangue', planosaude = '$planosaude', alergias = '$alergias', prontuario = '$prontuario' WHERE cpf = '$cpf'");
-
 	
 }
 else{
@@ -36,5 +35,4 @@ else{
     }
 }
     mysqli_close($conexao);
-
 ?>

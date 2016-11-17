@@ -4,6 +4,7 @@
 	<title>Cadastro de Produtos</title>
 </head>
 <body>
+
 <?php
 session_start();
 
@@ -16,7 +17,7 @@ $login=$_POST['usuario'];
 $senha=$_POST['senha'];
 $resultado = mysqli_query($conexao, "SELECT login,senha FROM usuario where login ='".$login."' and senha = '".$senha."'");
 $num_linha=mysqli_num_rows($resultado);
-//$usu=mysqli_fetch_array($resultado);
+
 if ($num_linha > 0){
 	while($row = mysqli_fetch_array($resultado))
 	{
@@ -27,22 +28,15 @@ if ($num_linha > 0){
 		}
 		else{
 			$_SESSION['usuario']=2;
-				header("location:menuprincipalNormal.php");
+			header("location:menuprincipalNormal.php");
 		}
-	
-	}
-						
-}else{
-	
-	echo "Usuário não cadastrado";
+	}						
 }
-
-
-
-
+else
+{	
+	echo "<script> alert('Usuário Não Cadastrado');</script>";
+}
 mysqli_close($conexao);
-
-
 ?>
 </body>
 </html>

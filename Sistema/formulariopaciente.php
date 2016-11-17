@@ -2,9 +2,6 @@
 <?php 
 	session_start();
 
-	//unset($_SESSION['usuario']);
-
-	
 	if ($_SESSION['usuario'] == 0){
 		header("location:login.php");
 	}
@@ -14,11 +11,13 @@
 		<meta charset="UTF-8"> 
 		<link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
 		<title> Formulário Paciente</title>
+		<script src="script.js"></script>
 	</head>
 	
 	<body id="body_formPaciente">
+		
 		<div class="formulario">
-			<form action="../scripts/cadastraPaciente.php" method="post">	
+			<form action="../scripts/cadastraPaciente.php" name="formPaciente" method="post" onsubmit="return validarPaciente()">	
 				<p> Formulário de Pacientes </p> <br>
 				<div class="FormUser">
 					<p> Nome  </p>
@@ -43,8 +42,8 @@
 					<p> Prontuário </p>
 					<input type="text" class="caixa" name="prontuario_paciente" size="28%"/>
 				</div>
-				<p> <input type="submit" class="button" id="botao_menu_iframe" value="Cadastrar" name="logar"/> </p>
+				<p> <input type="submit" class="button" id="botao_menu_iframe" value="Cadastrar"/> </p>
 			</form>
-		</div>
+		</div>		
 	</body>
 </html>

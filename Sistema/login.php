@@ -3,12 +3,11 @@
 <?php
 	session_start();
 	$_SESSION['usuario'] = 0;
-	
 ?>
 
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/estilo.css"/>
 		<title> Login </title>
 	</head>
 	

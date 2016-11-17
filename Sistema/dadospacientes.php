@@ -38,7 +38,7 @@
     }
     else
     {
-        echo "Não há pacientes cadastrados no sistema.";
+		echo "<script> alert('Não há pacientes cadastrados no sistema');</script>";
     }
 
     mysqli_close($conexao);
