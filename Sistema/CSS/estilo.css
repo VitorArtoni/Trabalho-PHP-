@@ -7,8 +7,7 @@ body
 
 #body_formPaciente
 {
-	background: rgb(0, 0, 0) transparent;
-	background: rgba(0, 0, 0, 0.2);
+	background-image:url("../Imagens/background_.jpg");
 }
 
 .FormUser
@@ -66,7 +65,7 @@ body
 	float: left;
 	position:absolute;
 	left:39%;
-	top:89%;
+	top:98%;
 }
 
 #container
