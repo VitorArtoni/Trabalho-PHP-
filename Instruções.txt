@@ -1,0 +1,16 @@
+Instruções
+
+-Foi utilizado no trabalho o SGBD phpmyadmin com o servidor local
+do xampp;
+
+-User: root
+ Senha:
+
+-Para executar o script de criação do banco, crie o banco no phpmyadmin
+om o nome sistemamedico.
+
+-Deve executar o script CriarTabela para ser criado as tabelas do
+trabalho. Observação:Deve ser executado duas vezes o script para
+a inserção do usuário EnfermeiroChefe. 
+
+
